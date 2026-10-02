@@ -1,0 +1,982 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Eulalia Pascual Biosca</title>
+<meta name="description" content="Eulalia Pascual Biosca: MSc International Management student at the University of Bath. Projects, experience and how I work with AI.">
+<meta property="og:title" content="Eulalia Pascual Biosca">
+<meta property="og:description" content="Eulalia Pascual Biosca: MSc International Management student at the University of Bath. Projects, experience and how I work with AI.">
+<meta property="og:image" content="img/hero.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232F5BD3'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' fill='white' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E">
+<style>html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<style>
+/* Layout: warm editorial single page, sticky full menu, generous sections, soft cards only where an item is a distinct object */
+:root{
+  --paper:#FAF7F2; --paper-2:#F3EEE5; --card:#FFFFFF; --ink:#1B2A4A; --ink-2:#56617B; --ink-3:#8A93A8;
+  --line:#E6DED1; --blue:#2F5BD3; --blue-ink:#1E40AF; --blue-soft:#E3EBFA; --blue-line:#C9D8F6;
+  --sand:#EFE6D6; --sand-ink:#6B4E22; --todo:#B4541F; --todo-soft:#FBEBDF;
+  --f-display:"Fraunces", Georgia, "Times New Roman", serif;
+  --f-body:"DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-hand:"Caveat", "Segoe Print", cursive;
+  --wrap:1120px; --r:16px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0F1626; --paper-2:#131C30; --card:#18223A; --ink:#EEF1F7; --ink-2:#A9B3C8; --ink-3:#7C879E;
+  --line:#27334E; --blue:#82A4FF; --blue-ink:#AFC5FF; --blue-soft:#1C2A4C; --blue-line:#2F4373;
+  --sand:#2E2819; --sand-ink:#E5CB9C; --todo:#F2A774; --todo-soft:#3A2618; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0F1626; --paper-2:#131C30; --card:#18223A; --ink:#EEF1F7; --ink-2:#A9B3C8; --ink-3:#7C879E;
+  --line:#27334E; --blue:#82A4FF; --blue-ink:#AFC5FF; --blue-soft:#1C2A4C; --blue-line:#2F4373;
+  --sand:#2E2819; --sand-ink:#E5CB9C; --todo:#F2A774; --todo-soft:#3A2618; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth; scroll-padding-top:84px}
+body{background:var(--paper); color:var(--ink); font-family:var(--f-body); font-size:17px; line-height:1.65; -webkit-font-smoothing:antialiased}
+a{color:inherit}
+h1,h2,h3{font-family:var(--f-display); font-weight:500; text-wrap:balance; margin:0; letter-spacing:-0.01em}
+p{margin:0}
+.wrap{max-width:var(--wrap); margin:0 auto; padding-inline:clamp(16px,4vw,40px)}
+:focus-visible{outline:2px solid var(--blue); outline-offset:3px; border-radius:6px}
+
+/* nav */
+.nav{position:sticky; top:env(safe-area-inset-top,0px); z-index:20; background:color-mix(in srgb, var(--paper) 88%, transparent); backdrop-filter:saturate(1.2) blur(10px); -webkit-backdrop-filter:blur(10px); border-bottom:1px solid transparent; transition:border-color .3s}
+.nav.scrolled{border-bottom-color:var(--line)}
+.nav .wrap{display:flex; align-items:center; justify-content:space-between; gap:20px; padding-block:16px}
+.brand{font-family:var(--f-display); font-size:20px; text-decoration:none; white-space:nowrap}
+.brand span{color:var(--blue)}
+.links{display:flex; align-items:center; gap:24px; font-size:15px; color:var(--ink-2)}
+.links a{text-decoration:none; position:relative; padding:4px 0; transition:color .2s}
+.links a:not(.btn)::after{content:""; position:absolute; left:0; bottom:-2px; height:2px; width:0; background:var(--blue); border-radius:2px; transition:width .25s ease}
+.links a:not(.btn):hover, .links a.active{color:var(--ink)}
+.links a:not(.btn):hover::after, .links a.active::after{width:100%}
+.menu-btn{display:none; background:none; border:1px solid var(--line); border-radius:12px; width:44px; height:40px; color:var(--ink); font-size:20px; cursor:pointer}
+
+/* buttons */
+.btn{display:inline-flex; align-items:center; gap:8px; font:500 15px/1 var(--f-body); padding:13px 20px; border-radius:999px; text-decoration:none; border:1px solid transparent; cursor:pointer; transition:transform .2s ease, background .2s, border-color .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn .arr{transition:transform .2s ease}
+.btn:hover .arr{transform:translateX(3px)}
+.btn-primary{background:var(--blue); color:#fff}
+:root:not([data-theme="light"]) .btn-primary{color:var(--paper)}
+.btn-ghost{background:var(--card); border-color:var(--line); color:var(--ink)}
+.btn-ink{background:var(--ink); color:var(--paper); padding:10px 16px; font-size:14px}
+.links .btn-ink{color:var(--paper); padding:11px 20px; margin-left:6px; gap:8px}
+
+.talk{position:relative; display:inline-flex; align-items:center; gap:8px; padding:4px 6px 10px; text-decoration:none; font-family:var(--f-hand); font-size:36px; line-height:1; color:var(--blue)}
+.talk-line{position:absolute; left:6px; right:30px; bottom:2px; height:10px; width:calc(100% - 36px); fill:none; stroke:var(--blue); stroke-width:3; stroke-linecap:round; stroke-dasharray:130; stroke-dashoffset:130; transition:stroke-dashoffset .5s ease}
+.talk:hover .talk-line, .talk:focus-visible .talk-line{stroke-dashoffset:0}
+.talk-arr{font-family:var(--f-body); font-size:26px; transition:transform .25s ease}
+.talk:hover .talk-arr{transform:translateX(5px) rotate(-8deg)}
+/* hero */
+.hero{padding-block:clamp(56px,10vw,120px) clamp(48px,8vw,96px)}
+.hello{font-family:var(--f-hand); font-size:30px; color:var(--blue); display:flex; align-items:center; gap:10px; margin-bottom:18px}
+.wave{display:inline-block; font-size:30px; animation:wave 2.6s ease-in-out infinite; transform-origin:70% 70%}
+@keyframes wave{0%,55%,100%{transform:rotate(0)}8%,24%{transform:rotate(16deg)}16%,32%{transform:rotate(-8deg)}40%{transform:rotate(10deg)}}
+.hero h1{font-size:clamp(22px,7vw,76px); line-height:1.1; max-width:100%}
+.h-line{display:block; width:max-content; max-width:none}
+.h-nowrap{white-space:nowrap}
+.rot{display:inline-block; font-style:italic; color:var(--blue); position:relative; transition:opacity .35s, transform .35s}
+.rot::after{content:""; position:absolute; left:2px; right:2px; bottom:.04em; height:.12em; background:var(--blue-line); border-radius:4px; z-index:-1}
+.rot.out{opacity:0; transform:translateY(.25em)}
+.dream{font-family:var(--f-display); font-style:italic; font-weight:500; color:var(--blue)}
+.lede{font-size:clamp(17px,1.6vw,20px); color:var(--ink-2); max-width:56ch; margin-top:24px}
+.cta{display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:10px clamp(28px,5vw,56px); margin-top:32px}
+.facts{display:flex; flex-wrap:wrap; gap:10px 28px; margin-top:18px; font-size:14px; color:var(--ink-2)}
+.facts b{font-weight:600; color:var(--ink); font-variant-numeric:tabular-nums}
+.rise{animation:rise .8s cubic-bezier(.2,.8,.2,1) both}
+@keyframes rise{from{opacity:0; transform:translateY(16px)}to{opacity:1; transform:none}}
+
+.hero-grid{display:grid; grid-template-columns:minmax(0,1.35fr) minmax(0,.9fr); gap:clamp(28px,5vw,64px); align-items:center}
+.hero-text{min-width:0}
+.hero-photo{position:relative; margin:0; justify-self:end; width:min(100%,360px); isolation:isolate}
+.hero-photo .frame{display:block; aspect-ratio:4/5; max-width:100%; border-radius:200px 200px 22px 22px; overflow:hidden; border:8px solid var(--card); box-shadow:0 16px 40px color-mix(in srgb,var(--ink) 16%,transparent); transform:rotate(2deg); transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.hero-photo:hover .frame{transform:rotate(0) translateY(-6px)}
+.hero-photo img{width:100%; height:100%; object-fit:cover; object-position:50% 20%; display:block}
+.hero-photo .blob{position:absolute; right:-18px; bottom:-18px; width:62%; aspect-ratio:1; border-radius:50%; background:var(--blue-soft); z-index:-1}
+.tag-float{position:absolute; left:-22px; bottom:28px; background:var(--card); border:1px solid var(--line); border-radius:999px; padding:9px 15px; font:500 14px/1 var(--f-body); color:var(--ink); box-shadow:0 6px 18px color-mix(in srgb,var(--ink) 10%,transparent); display:flex; gap:8px; align-items:center; white-space:nowrap}
+.tag-float i{width:8px; height:8px; border-radius:50%; background:#2FA36B; display:block}
+@media (max-width:860px){.hero-grid{grid-template-columns:minmax(0,1fr)} .hero-photo{justify-self:start; width:min(100%,300px); margin-left:22px}}
+
+.based{display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin-top:48px; padding-top:24px; border-top:1px solid var(--line)}
+.based-lbl{font:600 12px/1 var(--f-body); letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3); margin-right:4px}
+.place{display:inline-flex; align-items:center; gap:7px; padding:8px 14px; border-radius:999px; background:var(--blue-soft); color:var(--blue-ink); font-size:14.5px; font-weight:500; transition:transform .25s ease}
+.place:hover{transform:translateY(-2px)}
+.place svg{width:16px; height:16px; flex:none}
+.place.remote{background:var(--sand); color:var(--sand-ink)}
+.visit{display:flex; align-items:center; gap:12px; width:100%; padding:10px 14px 10px 10px; border-radius:14px; border:1px solid var(--blue-line); background:var(--blue-soft); color:var(--blue-ink); text-decoration:none; transition:background .25s, color .25s, transform .25s}
+.visit-ic{width:38px; height:38px; flex:none; border-radius:10px; background:var(--card); display:grid; place-items:center; transition:transform .3s}
+.visit-ic svg{width:20px; height:20px}
+.visits{display:grid; gap:10px}
+.visit.soon{border-style:dashed; background:transparent; cursor:default}
+.visit.soon:hover{background:transparent; color:var(--blue-ink); transform:none}
+.visit.soon:hover .visit-ic{color:inherit; transform:none}
+.visit-txt{display:grid; min-width:0; line-height:1.3}
+.visit-txt b{font-weight:600; font-size:15px; overflow-wrap:anywhere}
+.visit-txt small{font-size:13px; opacity:.8; overflow-wrap:anywhere}
+.visit-arr{margin-left:auto; font-size:20px; transition:transform .25s}
+.visit:hover{background:var(--blue); color:var(--card); transform:translateY(-2px)}
+.visit:hover .visit-ic{color:var(--blue); transform:rotate(-8deg)}
+.visit:hover .visit-arr{transform:translate(3px,-3px)}
+.pair{grid-column:1/-1; display:grid; grid-template-columns:minmax(0,1fr) 100px minmax(0,1fr); align-items:center}
+.pair > .card{align-self:stretch}
+.pair-link{position:relative; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px; height:100%; pointer-events:none}
+.pair-link::before{content:""; position:absolute; left:0; right:0; top:50%; border-top:2px dashed var(--blue-line)}
+.pair-ic{position:relative; width:40px; height:40px; border-radius:50%; background:var(--blue); color:var(--card); display:grid; place-items:center; box-shadow:0 0 0 6px var(--paper)}
+.pair-ic svg{width:20px; height:20px}
+.pair-lbl{position:absolute; top:calc(50% + 28px); white-space:nowrap; font-family:var(--f-hand); font-size:17px; color:var(--blue)}
+@media (max-width:860px){
+  .pair{grid-template-columns:minmax(0,1fr)}
+  .pair-link{height:72px; flex-direction:row}
+  .pair-link::before{left:50%; right:auto; top:0; bottom:0; border-top:0; border-left:2px dashed var(--blue-line)}
+  .pair-lbl{top:50%; left:calc(50% + 32px); transform:translateY(-50%)}
+}
+.rideu-logo{background:url("img/rideu-logo.png") center/cover no-repeat}
+.myo-logo{background:url("img/myo-logo.png") center/cover no-repeat}
+.mini-logo.round{border-radius:50%}
+.h-logo{display:flex; align-items:center; gap:12px}
+.feature .mini-logo{width:42px; height:42px}
+.mini-logo{display:inline-block; width:30px; height:30px; border-radius:8px; flex:none}
+.lk{display:inline-grid; gap:4px; text-decoration:none; color:var(--ink)}
+.lk small{font:600 11px/1 var(--f-body); letter-spacing:.12em; color:var(--ink-3)}
+.lk b{font-family:var(--f-display); font-weight:500; font-size:21px; line-height:1.25; display:inline-flex; gap:8px; align-items:center; overflow-wrap:anywhere}
+.lk u{text-decoration:none; background:linear-gradient(var(--blue-line),var(--blue-line)) 0 88%/100% 6px no-repeat; transition:background-size .35s}
+.lk b i{font-style:normal; font-family:var(--f-body); font-size:18px; color:var(--blue); transition:transform .25s}
+a.lk:hover u{background-image:linear-gradient(var(--blue),var(--blue)); background-size:100% 2px}
+a.lk:hover b i{transform:translate(3px,-3px)}
+.lk.soon b{color:var(--ink-3); font-style:italic}
+.lk.soon u{background:none}
+.lks{display:flex; flex-wrap:wrap; gap:18px 36px}
+.built-grid{display:grid; grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr); gap:clamp(24px,4vw,48px); align-items:start}
+.built-grid .story{grid-template-columns:minmax(0,1fr); gap:0}
+.browser{display:block; position:sticky; top:96px; border-radius:14px; border:1px solid var(--line); background:var(--card); overflow:hidden; text-decoration:none; color:var(--ink); box-shadow:0 14px 34px color-mix(in srgb,var(--ink) 10%,transparent); transition:transform .35s cubic-bezier(.2,.8,.2,1), border-color .3s}
+.browser:hover{transform:translateY(-4px) rotate(-.4deg); border-color:var(--blue-line)}
+.br-bar{display:flex; align-items:center; gap:6px; padding:9px 12px; background:var(--paper-2); border-bottom:1px solid var(--line)}
+.br-d{width:9px; height:9px; border-radius:50%; background:var(--line)}
+.br-d:nth-child(1){background:#F28B82}.br-d:nth-child(2){background:#F6C76A}.br-d:nth-child(3){background:#7FCB8A}
+.br-url{margin-left:8px; flex:1; display:flex; align-items:center; gap:6px; background:var(--card); border-radius:7px; padding:5px 10px; font-size:12.5px; color:var(--ink-2); min-width:0}
+.br-lock{font-size:7px; color:#2FA36B}
+.br-url em{margin-left:auto; font-style:normal; color:var(--blue)}
+.br-body{background:var(--paper); padding:12px 16px 18px}
+.br-nav{display:flex; justify-content:space-between; align-items:center; font-family:var(--f-display); font-size:11px; color:var(--ink); margin-bottom:16px}
+.br-nav i{color:var(--blue); font-style:normal}
+.br-links{display:flex; gap:6px}.br-links span{width:22px; height:4px; border-radius:2px; background:var(--line)}
+.br-hero{display:grid; grid-template-columns:minmax(0,1.4fr) minmax(0,.9fr); gap:14px; align-items:center}
+.br-txt{display:grid; gap:6px}
+.br-hi{font-family:var(--f-hand); color:var(--blue); font-size:15px}
+.br-h1{font-family:var(--f-display); font-size:clamp(13px,1.6vw,17px); line-height:1.15; color:var(--ink)}
+.br-h1 em{color:var(--blue)}
+.br-ln{height:5px; border-radius:3px; background:var(--line); width:90%; margin-top:4px}.br-ln.short{width:60%; margin-top:0}
+.br-ph{position:relative; isolation:isolate}
+.br-frame{display:block; aspect-ratio:4/5; border-radius:60px 60px 8px 8px; border:3px solid var(--card); background-size:cover; background-position:50% 20%; transform:rotate(2deg); box-shadow:0 6px 14px color-mix(in srgb,var(--ink) 14%,transparent)}
+.br-blob{position:absolute; right:-6px; bottom:-6px; width:60%; aspect-ratio:1; border-radius:50%; background:var(--blue-soft); z-index:-1}
+.br-foot{display:flex; justify-content:space-between; align-items:center; padding:10px 14px; border-top:1px solid var(--line); font-size:13px; color:var(--ink-2)}
+.br-foot b{color:var(--blue); font-weight:600}
+@media (max-width:860px){.built-grid{grid-template-columns:minmax(0,1fr)} .browser{position:relative; top:0}}
+.contact-lks{display:flex; flex-wrap:wrap; gap:28px clamp(36px,6vw,72px); align-items:flex-start}
+.contact-lks .lk b{font-size:clamp(22px,2.4vw,28px)}
+.contact-lks .lk{gap:8px}
+.contact-lks .lk small{font-size:13px; letter-spacing:.14em; color:var(--blue); font-weight:700}
+.copy-btn{justify-self:start; margin-top:6px; font:500 13px/1 var(--f-body); border:0; border-radius:999px; padding:8px 12px; background:var(--blue-soft); color:var(--blue-ink); cursor:pointer}
+.lead .item{padding:13px 0}
+.lead .item b{font-size:17px}
+.lead .item .when{font-size:13px}
+.lead .item p{font-size:14.5px}
+.hero-contact{display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:10px 0; margin-top:22px; padding-top:16px; border-top:1px dashed var(--line)}
+.hc + .hc::before{content:""; width:1px; height:16px; background:var(--blue-line); margin:0 18px 0 0}
+.hc{margin-left:18px}
+.hc:first-child{margin-left:0}
+.hc{display:inline-flex; align-items:center; gap:7px; padding:0; border:0; background:none; font:400 14px/1.4 var(--f-body); color:var(--ink-2); text-decoration:none; cursor:pointer; position:relative; transition:color .2s}
+.hc svg{width:16px; height:16px; flex:none; color:var(--blue)}
+.hc span{border-bottom:1px solid transparent; transition:border-color .2s}
+.hc:hover{color:var(--ink)} .hc:hover span{border-bottom-color:var(--blue-line)}
+.hc-tip{font-style:normal; font-size:12px; color:var(--blue)}
+.lead-sub{color:var(--ink-2); font-size:15px; margin:-8px 0 20px}
+.lead .item b{display:flex; align-items:flex-start; gap:10px}
+.lead .item .mk{width:16px; height:16px; flex:none; margin-top:3px; color:var(--blue)}
+.lead .item .mk.star{color:#C9962E}
+/* sections */
+section.block{padding-block:clamp(56px,8vw,104px)}
+section.alt{background:var(--paper-2)}
+.kicker{font-family:var(--f-hand); font-size:24px; color:var(--blue); margin-bottom:6px}
+.head{display:flex; flex-wrap:wrap; align-items:end; justify-content:space-between; gap:12px 32px; margin-bottom:40px}
+.head h2{font-size:clamp(32px,4.4vw,48px); line-height:1.1}
+.head p{color:var(--ink-2); max-width:46ch}
+.hl{font-weight:600; color:var(--blue)}
+.h2-accent{display:block; font-style:italic; color:var(--blue)}
+.sub{font-family:var(--f-display); font-size:24px; margin-bottom:18px}
+
+.todo{display:inline-flex; align-items:center; gap:6px; font:600 11px/1 var(--f-body); letter-spacing:.06em; text-transform:uppercase; color:var(--todo); background:var(--todo-soft); padding:5px 9px; border-radius:6px; vertical-align:middle}
+.todo-box{border:1.5px dashed var(--todo); border-radius:12px; padding:14px 16px; color:var(--ink-2); font-size:15px}
+
+/* about */
+.about{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:clamp(32px,6vw,72px); align-items:center}
+.about-text{display:grid; gap:18px; font-size:18px; max-width:58ch}
+.photos{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px 16px; padding-top:8px}
+.ph{margin:0; background:var(--card); padding:8px 8px 0; border-radius:6px; box-shadow:0 6px 18px color-mix(in srgb, var(--ink) 12%, transparent); transition:transform .4s cubic-bezier(.2,.8,.2,1); max-width:100%}
+.ph img{display:block; width:100%; height:auto; aspect-ratio:1/1; object-fit:cover; border-radius:3px; max-width:100%}
+.ph.wide{grid-column:1/-1}
+.ph.wide img{aspect-ratio:3/2}
+.ph figcaption{font-family:var(--f-hand); font-size:21px; color:var(--blue-ink); text-align:center; padding:6px 0 8px}
+.ph:nth-child(1){transform:rotate(-2.5deg)}
+.ph:nth-child(2){transform:rotate(2deg) translateY(10px)}
+.ph:nth-child(3){transform:rotate(-1deg)}
+.ph:hover{transform:rotate(0) translateY(-6px) scale(1.02)}
+
+/* projects */
+.tags{display:flex; flex-wrap:wrap; gap:6px}
+.tag{font-size:12.5px; padding:4px 11px; border-radius:999px; background:var(--blue-soft); color:var(--blue-ink); white-space:nowrap}
+.tag.s{background:var(--sand); color:var(--sand-ink)}
+.status{display:inline-flex; align-items:center; gap:7px; font-size:13px; font-weight:500; color:var(--ink-2)}
+.dot{width:8px; height:8px; border-radius:50%; background:#2FA36B; box-shadow:0 0 0 4px color-mix(in srgb,#2FA36B 20%,transparent)}
+.dot.wip{background:#E0A030; box-shadow:0 0 0 4px color-mix(in srgb,#E0A030 22%,transparent); animation:pulse 2s ease-in-out infinite}
+.dot.priv{background:var(--ink-3); box-shadow:none}
+@keyframes pulse{50%{box-shadow:0 0 0 7px color-mix(in srgb,#E0A030 8%,transparent)}}
+
+.proj-stack{display:grid; gap:24px}
+.feature{background:var(--card); border:1px solid var(--line); border-radius:22px; padding:clamp(22px,4vw,44px); display:grid; grid-template-columns:minmax(0,1.25fr) minmax(0,1fr); gap:clamp(24px,4vw,56px)}
+.feature h3{font-size:clamp(28px,3.4vw,38px); line-height:1.1; margin:14px 0 12px}
+.feature .desc{color:var(--ink-2)}
+.role{display:grid; gap:10px; margin-top:22px; padding:0; list-style:none}
+.role li{position:relative; padding-left:22px; font-size:15.5px}
+.role li::before{content:""; position:absolute; left:2px; top:.62em; width:8px; height:8px; border-radius:2px; background:var(--blue); transform:rotate(45deg)}
+.side{display:grid; gap:22px; align-content:start}
+.side h4, .card h4{font:600 12px/1 var(--f-body); letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3); margin:0 0 10px}
+.pending{display:grid; gap:6px; padding:0; margin:0; list-style:none; font-size:14.5px; color:var(--ink-2)}
+.pending li::before{content:"○ "; color:var(--todo)}
+.lnks{display:flex; flex-wrap:wrap; gap:8px 18px; font-size:15px}
+.lnks a{color:var(--blue-ink); text-decoration:none; border-bottom:1px solid var(--blue-line); transition:border-color .2s}
+.lnks a:hover{border-color:var(--blue)}
+
+.grid{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px}
+.card{background:var(--card); border:1px solid var(--line); border-radius:var(--r); padding:26px; display:flex; flex-direction:column; gap:14px; transition:transform .3s ease, border-color .3s}
+.card:hover{transform:translateY(-4px); border-color:var(--blue-line)}
+.card h3{font-size:26px; line-height:1.15; display:flex; align-items:center; gap:8px}
+.card .arr{color:var(--blue); font-family:var(--f-body); font-size:20px; opacity:.4; transition:transform .3s, opacity .3s}
+.card:hover .arr{opacity:1; transform:translate(3px,-3px)}
+.card p{color:var(--ink-2); font-size:15.5px}
+.card .role{margin-top:0}
+.card-wide{grid-column:1/-1}
+.card .foot{margin-top:auto; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:10px; padding-top:6px}
+.stat{display:flex; gap:22px; flex-wrap:wrap}
+.stat div{display:grid}
+.stat b{font-family:var(--f-display); font-weight:500; font-size:30px; line-height:1.1; font-variant-numeric:tabular-nums; color:var(--blue-ink)}
+.stat span{font-size:13px; color:var(--ink-3)}
+
+/* AI lab */
+.ai-intro{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; margin-bottom:56px}
+.ai-intro a{text-decoration:none; padding:14px 16px; border-radius:12px; border:1px solid var(--line); background:var(--card); font-size:14.5px; transition:border-color .2s, transform .2s}
+.ai-intro a:hover{border-color:var(--blue-line); transform:translateY(-2px)}
+.ai-intro a b{display:block; font-family:var(--f-display); font-weight:500; font-size:18px}
+.ai-intro a span{color:var(--ink-3)}
+.lab-part{margin-bottom:72px}
+.lab-part:last-child{margin-bottom:0}
+
+.tools{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px}
+.tool{background:var(--card); border:1px solid var(--blue-line); border-radius:12px; padding:14px 16px; display:grid; gap:2px; align-content:start}
+.tool:hover{border-color:var(--blue)}
+.tool{transition:border-color .25s}
+.tool b{font-family:var(--f-display); font-weight:500; font-size:19px}
+.tool p{font-size:14.5px; color:var(--ink-2)}
+.tool .uses{font-size:13px; color:var(--ink-3)}
+
+.steps{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px 0; counter-reset:s; border-top:1px solid var(--line)}
+.step{padding:22px 18px 0 0; position:relative; display:grid; grid-template-columns:auto minmax(0,1fr); column-gap:10px; align-items:baseline; align-content:start}
+.step::before{counter-increment:s; content:counter(s); font-family:var(--f-display); font-size:34px; line-height:1; color:var(--blue-line)}
+.step b{display:block; font-weight:600}
+.step p{grid-column:1/-1; margin-top:6px}
+.step p{font-size:14.5px; color:var(--ink-2)}
+
+.ba{display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr); gap:16px; align-items:stretch}
+.ba .pane{border-radius:14px; padding:22px; display:grid; gap:10px; align-content:start}
+.ba .before{background:var(--paper-2); border:1px solid var(--line)}
+.ba .after{background:var(--blue-soft); border:1px solid var(--blue-line)}
+.ba .lbl{font:600 12px/1 var(--f-body); letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3)}
+.ba .after .lbl{color:var(--blue-ink)}
+.ba .mid{display:flex; align-items:center; font-size:26px; color:var(--blue)}
+
+/* demo */
+.ask-fab{position:fixed; right:clamp(16px,3vw,28px); bottom:calc(clamp(16px,3vw,28px) + env(safe-area-inset-bottom,0px)); z-index:40; display:inline-flex; align-items:center; gap:10px; padding:12px 18px 12px 14px; border:0; border-radius:999px; background:var(--blue); color:#fff; font:500 15px/1 var(--f-body); cursor:pointer; box-shadow:0 8px 24px color-mix(in srgb, var(--blue) 30%, transparent); transition:transform .25s ease}
+:root:not([data-theme="light"]) .ask-fab{color:var(--paper)}
+.ask-fab:hover{transform:translateY(-3px)}
+.ask-fab svg{width:22px; height:22px}
+.ask-fab[aria-expanded="true"] .ask-open{display:none}
+.ask-fab[aria-expanded="false"] .ask-close{display:none}
+.chat{position:fixed; right:clamp(16px,3vw,28px); bottom:calc(clamp(16px,3vw,28px) + 64px + env(safe-area-inset-bottom,0px)); z-index:40; width:min(380px, calc(100vw - 32px)); max-height:min(560px, calc(100vh - 140px)); display:flex; flex-direction:column; background:var(--card); border:1px solid var(--line); border-radius:20px; overflow:hidden; box-shadow:0 18px 50px color-mix(in srgb, var(--ink) 18%, transparent); transform-origin:bottom right; animation:pop .28s cubic-bezier(.2,.8,.2,1)}
+@keyframes pop{from{opacity:0; transform:translateY(10px) scale(.96)}to{opacity:1; transform:none}}
+.chat-note{padding:0 18px 14px; font-size:12.5px; color:var(--ink-3)}
+.chat-x{border:0; background:none; color:var(--ink-2); font-size:20px; line-height:1; cursor:pointer; padding:4px 6px; border-radius:8px}
+.chat-top{display:flex; align-items:center; justify-content:space-between; padding:14px 18px; border-bottom:1px solid var(--line); font-size:14px; color:var(--ink-2)}
+.chat-top b{color:var(--ink); font-weight:600}
+.log{flex:1; min-height:200px; overflow-y:auto; padding:18px; display:flex; flex-direction:column; gap:12px; scroll-behavior:smooth}
+.msg{max-width:86%; padding:11px 15px; border-radius:16px; font-size:15px; line-height:1.55}
+.msg.q{align-self:flex-end; background:var(--blue); color:#fff; border-bottom-right-radius:5px}
+:root:not([data-theme="light"]) .msg.q{color:var(--paper)}
+.msg.a{align-self:flex-start; background:var(--paper-2); border-bottom-left-radius:5px}
+.typing{display:inline-flex; gap:4px}
+.typing i{width:6px; height:6px; border-radius:50%; background:var(--ink-3); animation:blink 1s infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes blink{50%{opacity:.25}}
+.chips{display:flex; flex-wrap:wrap; gap:8px; padding:14px 18px; border-top:1px solid var(--line)}
+.chip{font:500 13.5px/1.2 var(--f-body); padding:9px 13px; border-radius:999px; border:1px solid var(--blue-line); background:transparent; color:var(--blue-ink); cursor:pointer; transition:background .2s, transform .2s}
+.chip:hover{background:var(--blue-soft); transform:translateY(-1px)}
+.chip:disabled{opacity:.45; cursor:default; transform:none}
+
+/* built with AI */
+.story{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px 40px; list-style:none; padding:0; margin:0; counter-reset:t}
+.story li{display:grid; grid-template-columns:auto minmax(0,1fr); gap:14px; padding:16px 0; border-bottom:1px solid var(--line)}
+.story li::before{counter-increment:t; content:counter(t,decimal-leading-zero); font:500 13px/1.9 var(--f-body); color:var(--blue); font-variant-numeric:tabular-nums}
+.story b{font-weight:600}
+.story p{font-size:15px; color:var(--ink-2)}
+
+/* timeline */
+.tl{display:grid; gap:0; border-left:2px solid var(--line); margin-left:6px}
+.job{position:relative; padding:0 0 40px 30px}
+.job:last-child{padding-bottom:0}
+.job::before{content:""; position:absolute; left:-8px; top:7px; width:14px; height:14px; border-radius:50%; background:var(--paper); border:2px solid var(--blue); transition:background .25s}
+.job:hover::before{background:var(--blue)}
+.job-top{display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-start; gap:10px 24px; margin-bottom:16px}
+.co{display:flex; align-items:center; gap:8px; min-width:0}
+.co-txt{display:flex; flex-wrap:wrap; align-items:baseline; gap:2px 8px; min-width:0}
+.co-name{font-family:var(--f-body); font-weight:500; font-size:16px; line-height:1.35; color:var(--blue-ink)}
+.co-sub{font-size:13.5px; color:var(--ink-3)}
+.job .meta{display:flex; flex-direction:column; align-items:flex-end; gap:4px; text-align:right}
+.job .loc{display:inline-flex; align-items:center; gap:6px; font-size:14px; color:var(--blue-ink)}
+.job .loc svg{width:16px; height:16px; flex:none}
+.job .when{font-size:13.5px; color:var(--ink-3); font-variant-numeric:tabular-nums}
+.job-head{display:grid; gap:10px; min-width:0}
+.job h3{font-size:23px; line-height:1.2; margin:0}
+.job ul{margin:0; padding-left:18px; display:grid; gap:6px; color:var(--ink-2); font-size:15.5px; max-width:70ch}
+
+.two{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:clamp(32px,5vw,64px)}
+.list{display:grid; gap:0}
+.item{display:grid; grid-template-columns:minmax(0,1fr) auto; gap:4px 16px; padding:18px 0; border-bottom:1px solid var(--line)}
+.item:first-child{border-top:1px solid var(--line)}
+.item b{font-family:var(--f-display); font-weight:500; font-size:21px}
+.item .when{font-size:13.5px; color:var(--ink-3); white-space:nowrap; font-variant-numeric:tabular-nums}
+.item p{grid-column:1/-1; color:var(--ink-2); font-size:15.5px}
+.item .meta{display:flex; flex-direction:column; align-items:flex-end; gap:4px; text-align:right}
+.item .loc{display:inline-flex; align-items:center; gap:6px; font-size:14px; color:var(--blue-ink)}
+.item .loc svg{width:16px; height:16px; flex:none}
+
+.honors{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px}
+.honor{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:22px; display:grid; gap:8px; align-content:start}
+.honor .big{font-family:var(--f-display); font-size:26px; line-height:1; color:var(--blue-ink); font-variant-numeric:tabular-nums}
+.honor b{font-weight:600}
+.honor p{font-size:14.5px; color:var(--ink-2)}
+
+.skills{display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); gap:clamp(32px,5vw,64px)}
+.skills h3{font-size:22px; margin-bottom:14px}
+.lang{display:grid; gap:14px}
+.lang div{display:grid; gap:6px}
+.lang .row{display:flex; justify-content:space-between; font-size:15px}
+.lang .row span{color:var(--ink-3); font-size:13.5px}
+.bar{height:6px; border-radius:6px; background:var(--line); overflow:hidden}
+.bar i{display:block; height:100%; background:var(--blue); border-radius:6px; transform-origin:left; transform:scaleX(var(--v)); transition:transform 1.1s cubic-bezier(.2,.8,.2,1)}
+.cert-block{margin-top:64px}
+.certs{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px 16px; list-style:none; margin:0; padding:0}
+.certs li{display:flex; justify-content:space-between; align-items:center; gap:16px; padding:14px 16px; border-radius:12px; background:var(--card); border:1px solid var(--line); transition:border-color .25s}
+.certs li:hover{border-color:var(--blue-line)}
+.c-name{display:grid; gap:2px; font-size:15px; font-weight:500; min-width:0}
+.c-name small{font-size:13px; font-weight:400; color:var(--ink-3)}
+.c-year{flex:none; font-size:13px; font-weight:600; color:var(--blue-ink); background:var(--blue-soft); padding:4px 10px; border-radius:999px; font-variant-numeric:tabular-nums}
+@media (max-width:760px){.certs{grid-template-columns:minmax(0,1fr)}}
+
+/* contact */
+.soft{margin-top:72px}
+.lead{margin-top:72px}
+.tl{max-width:880px}
+.softs{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px}
+.soft-h{text-align:center; display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:10px; margin-bottom:8px}
+.soft-sub{text-align:center; color:var(--ink-2); font-size:15.5px; margin:0 auto 28px; max-width:52ch}
+.sk{background:var(--card); border:1px solid var(--line); border-radius:18px; padding:30px 24px 26px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:10px; transition:transform .3s ease, border-color .3s}
+.sk:hover{transform:translateY(-4px); border-color:var(--blue-line)}
+.skic{width:56px; height:56px; border-radius:50%; background:var(--blue-soft); color:var(--blue-ink); display:grid; place-items:center; margin-bottom:6px; transition:transform .35s cubic-bezier(.2,.8,.2,1), background .3s, color .3s}
+.skic svg{width:26px; height:26px}
+.sk:nth-child(even) .skic{background:var(--sand); color:var(--sand-ink)}
+.sk:hover .skic{transform:scale(1.1) rotate(-6deg); background:var(--blue); color:var(--card)}
+.sk b{font-family:var(--f-display); font-weight:500; font-size:21px; text-wrap:balance}
+.sk p{font-size:15px; color:var(--ink-2); max-width:32ch}
+@media (max-width:960px){.softs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.softs{grid-template-columns:minmax(0,1fr)}}
+.contact{text-align:left; display:grid; gap:28px}
+.contact h2{font-size:clamp(40px,6vw,72px); line-height:1.05; max-width:16ch}
+.ccards{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px}
+.ccard{background:var(--card); border:1px solid var(--line); border-radius:18px; padding:24px; display:flex; flex-direction:column; gap:6px; text-decoration:none; color:var(--ink); transition:transform .3s ease, border-color .3s}
+.ccard:hover{transform:translateY(-4px); border-color:var(--blue-line)}
+.cic{width:48px; height:48px; border-radius:14px; background:var(--blue-soft); color:var(--blue-ink); display:grid; place-items:center; margin-bottom:10px; transition:transform .3s ease}
+.cic svg{width:24px; height:24px}
+.ccard:hover .cic{transform:rotate(-6deg) scale(1.06)}
+.ccard.li .cic{background:var(--blue); color:var(--card)}
+.clbl{font:600 12px/1 var(--f-body); letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3)}
+.cval{font-family:var(--f-display); font-size:20px; line-height:1.3; overflow-wrap:anywhere; min-width:0}
+.cact{align-self:start; margin-top:10px; font:500 14px/1 var(--f-body); border:0; border-radius:999px; padding:10px 14px; background:var(--blue-soft); color:var(--blue-ink); cursor:pointer; display:inline-flex; gap:6px}
+.cact .arr{transition:transform .2s}
+.ccard:hover .cact .arr{transform:translate(2px,-2px)}
+@media (max-width:860px){.ccards{grid-template-columns:minmax(0,1fr)}}
+footer{padding-block:32px; border-top:1px solid var(--line); font-size:14px; color:var(--ink-3)}
+footer .wrap{display:flex; flex-wrap:wrap; justify-content:space-between; gap:10px}
+
+/* reveal: visible at rest, gentle lift when scrolled into view */
+.rv{transition:transform .8s cubic-bezier(.2,.8,.2,1), opacity .8s}
+.rv.pre{transform:translateY(22px); opacity:.35}
+
+@media (max-width:960px){
+  .tools{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .honors{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr)); row-gap:8px}
+  .skills{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+}
+@media (max-width:1000px){
+  .menu-btn{display:block}
+  .links{position:absolute; top:100%; left:0; right:0; flex-direction:column; align-items:flex-start; gap:4px; padding:12px clamp(16px,4vw,40px) 20px; background:var(--paper); border-bottom:1px solid var(--line)}
+  .links[data-open="false"]{display:none}
+  .links a{padding:10px 0; font-size:17px}
+  .links .btn-ink{padding:12px 22px; margin:8px 0 0}
+}
+@media (max-width:860px){
+  .about, .feature, .grid, .demo, .two, .story{grid-template-columns:minmax(0,1fr)}
+  .ba{grid-template-columns:minmax(0,1fr)}
+  .ba .mid{justify-content:center; transform:rotate(90deg)}
+}
+@media (max-width:560px){
+  .job .meta{align-items:flex-start; text-align:left}
+  .tools, .honors, .skills, .steps, .ai-intro{grid-template-columns:minmax(0,1fr)}
+  .photos{gap:10px}
+}
+/* phones: layout-only adjustments, same content and design */
+@media (max-width:860px){
+  .hero-photo{justify-self:center; width:min(78%,300px); margin:8px auto 0}
+  .hero-photo .blob{right:-12px; bottom:-12px}
+}
+@media (max-width:560px){
+  .hero{padding-block:40px 48px}
+  .hello{font-size:26px; margin-bottom:12px}
+  .lede{margin-top:16px}
+  .cta{flex-wrap:nowrap; gap:18px; justify-content:center}
+  .talk{font-size:28px; padding:4px 2px 10px}
+  .talk-arr{font-size:20px}
+  .based{margin-top:32px; padding-top:18px; gap:8px}
+  .based-lbl{flex-basis:100%; margin:0 0 2px}
+  .place{font-size:13.5px; padding:7px 12px}
+  .facts{gap:8px 18px; font-size:13.5px}
+  section.block{padding-block:56px}
+  .head{margin-bottom:28px}
+  .ai-intro{grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; margin-bottom:40px}
+  .ai-intro a{padding:12px 10px; text-align:center}
+  .ai-intro a b{font-size:16px}
+  .ai-intro a span{display:none}
+  .item{grid-template-columns:minmax(0,1fr)}
+  .item .meta, .item > .when{align-items:flex-start; text-align:left}
+  .item .meta{flex-direction:row; flex-wrap:wrap; gap:4px 14px}
+  .honors{grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px}
+  .honor{padding:16px}
+  .honor .big{font-size:22px}
+  .honor p{font-size:13.5px}
+  .sk{padding:22px 18px 20px}
+  .skic{width:48px; height:48px}
+  .feature{padding:20px; border-radius:18px}
+  .card{padding:20px}
+  .lab-part{margin-bottom:52px}
+  .ask-fab{padding:14px; gap:0}
+  .ask-fab span{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap}
+  .chat{bottom:calc(16px + 60px + env(safe-area-inset-bottom,0px)); max-height:calc(100vh - 120px)}
+}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important; transition:none!important; scroll-behavior:auto!important}
+  .rv.pre{transform:none; opacity:1}
+}
+</style>
+
+</head>
+<body>
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Eulalia Pascual Biosca<span>.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="links">☰</button>
+    <nav class="links" id="links" data-open="false" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#ai">AI lab</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-ink" href="Eulalia-Pascual-Biosca-CV.pdf" target="_blank" rel="noopener">Resume ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+      <p class="hello rise">Hi there <span class="wave" aria-hidden="true">👋</span></p>
+      <h1 class="rise" style="animation-delay:.08s"><span class="h-line">I'm Eulalia.</span> <span class="h-line h-nowrap" id="hl2">I turn ideas into real</span> <span class="h-line h-nowrap" id="hl3">things with <span class="rot" id="rot">AI</span></span></h1>
+      <p class="lede rise" style="animation-delay:.16s">A <em class="dream">dreamcatcher</em> at heart. Ambitious, people-driven, always learning from others.</p>
+      <div class="cta rise" style="animation-delay:.24s">
+        <a class="talk" href="#projects"><span class="talk-txt">See my work</span><svg class="talk-line" viewBox="0 0 120 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 6 C 35 11, 70 1, 118 7"/></svg><span class="talk-arr" aria-hidden="true">→</span></a>
+                <a class="talk" href="#contact"><span class="talk-txt">Let's talk!</span><svg class="talk-line" viewBox="0 0 120 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8 C 30 2, 60 12, 118 4"/></svg><span class="talk-arr" aria-hidden="true">→</span></a>
+      </div>
+      <div class="based rise" style="animation-delay:.32s">
+        <span class="based-lbl">Based in</span>
+        <span class="place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5a7 7 0 0 0-14 0C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Bath, United Kingdom</span>
+        <span class="place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5a7 7 0 0 0-14 0C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Lleida, Spain</span>
+        <span class="place remote"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>Remote</span>
+      </div>
+      <div class="hero-contact rise" style="animation-delay:.4s">
+        <button type="button" class="hc" id="heroEmail" title="Copy email address"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg><span>epascual2508@gmail.com</span><em class="hc-tip" aria-live="polite"></em></button>
+        <a class="hc" href="https://www.linkedin.com/in/eulaliapascualbiosca" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg><span>LinkedIn</span></a>
+        <a class="hc" href="Eulalia-Pascual-Biosca-CV.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg><span>CV</span></a>
+      </div>
+      </div>
+      <figure class="hero-photo rise" style="animation-delay:.2s">
+        <span class="blob" aria-hidden="true"></span>
+        <span class="frame"><img src="img/hero.jpg" alt="Portrait of Eulalia Pascual Biosca" width="640" height="800"></span>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="block alt" id="about">
+    <div class="wrap">
+      <div class="head rv"><div><p class="kicker">a bit about me</p><h2>Business mind, storyteller, builder. <span class="h2-accent">Building human connections.</span></h2></div></div>
+      <div class="about">
+        <div class="about-text rv">
+          <p>People are what drive me. I love meeting new people and getting to know them, and I do my best work surrounded by <strong class="hl">ambitious</strong> people who push me to grow. <strong class="hl">Helping others</strong> is what makes it all worth it, whether that's a teammate, a client or a friend.</p>
+          <p>I bring that same energy to my work. I like being part of a <strong class="hl">team</strong>, listening before I speak and making sure the people around me feel heard. Whether I'm talking with a client, pitching an idea or building something with AI, I always keep in mind the people on the other side.</p>
+          <p>Outside work, I love a <strong class="hl">sporty lifestyle</strong>, so you'll usually find me running, at the gym or on a tennis court. I love to travel, and my favourite moments are the simple ones: quality time with my <strong class="hl">family and friends</strong>.</p>
+        </div>
+        <div class="photos rv">
+          <figure class="ph"><img src="img/on-court.jpg" alt="Eulalia playing tennis for Barton College" width="700" height="700"><figcaption>on court</figcaption></figure>
+          <figure class="ph"><img src="img/travelling.jpg" alt="Eulalia in New York, with the Brooklyn Bridge and the Manhattan skyline behind her" width="700" height="700"><figcaption>travelling</figcaption></figure>
+          <figure class="ph wide"><img src="img/my-people.jpg" alt="Eulalia with family and friends in Biescas, in the Pyrenees" width="1200" height="800"><figcaption>my people</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="block" id="projects">
+    <div class="wrap">
+      <div class="head rv"><div><p class="kicker">things I've made</p><h2>Projects</h2></div><p style="max-width:none">My own app, a client website and a published thesis.</p></div>
+
+      <div class="proj-stack">
+        <div class="grid">
+        <div class="pair">
+        <article class="card rv">
+          <span class="status"><span class="dot"></span>Live</span>
+          <h3><span class="rideu-logo mini-logo" aria-hidden="true"></span>RideU <span class="arr">↗</span></h3>
+          <p>A project I started myself: RideU is a ride-sharing idea for university students. Development is ongoing to make it a reality, and this bilingual landing page is the first step.</p>
+          <ul class="role">
+            <li>Validates .edu email addresses and collects sign-ups for the waitlist.</li>
+            <li>Live on GitHub Pages, with Google Search Console set up for myrideu.com.</li>
+            <li>Designed an animated pixel-layer logo in pure CSS.</li>
+          </ul>
+          <div class="tags"><span class="tag">Claude</span><span class="tag">GitHub Pages</span><span class="tag s">Search Console</span></div>
+          <div class="foot"><a class="lk" href="https://epas25.github.io/rideU" target="_blank" rel="noopener"><small>LIVE SITE</small><b><u>epas25.github.io/rideU</u><i aria-hidden="true">↗</i></b></a></div>
+        </article>
+        <span class="pair-link" aria-hidden="true"><span class="pair-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg></span><span class="pair-lbl">one project</span></span>
+
+        <article class="card rv">
+          <span class="status"><span class="dot"></span>Live</span>
+          <h3><span class="rideu-logo mini-logo" aria-hidden="true"></span>RideU app <span class="arr">↗</span></h3>
+          <p>The app behind RideU: a ride-sharing concept for university students, prototyped with no-code AI tools.</p>
+          <ul class="role">
+            <li>Prototyped the app with Lovable and Claude.</li>
+            <li>Developed the first steps of the backend.</li>
+            <li>Designed the visual identity and the splash screen.</li>
+            <li>Promoted the project and worked to help it reach its goals.</li>
+          </ul>
+          <div class="tags"><span class="tag">Lovable</span><span class="tag">Claude</span><span class="tag s">Visual identity</span></div>
+          <div class="foot"><a class="lk" href="https://app.myrideu.com/" target="_blank" rel="noopener"><small>LIVE APP</small><b><u>app.myrideu.com</u><i aria-hidden="true">↗</i></b></a></div>
+        </article>
+        </div>
+        </div>
+        <article class="feature rv">
+        <div>
+          <div style="display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center"><span class="status"><span class="dot wip"></span>In progress</span><span class="tag s">Client project</span></div>
+          <h3 class="h-logo"><span class="myo-logo mini-logo round" role="img" aria-label="MYO Performance Lab logo"></span>MYO Performance Lab</h3>
+          <p class="desc">A multi-page marketing website for a sports physiology and performance lab in Lleida, Spain. The lab offers VO2max and RMR testing plus data-driven online training for amateur endurance and hybrid athletes.</p>
+          <ul class="role">
+            <li>Translated the client's brand book into a web design system: typography, colour hierarchy and a "velocity wedge" graphic motif.</li>
+            <li>Defined the site architecture: four pages (Home, VO2max Test, Online Programming, About) so each service can rank in search, plus legal pages.</li>
+            <li>Designed the conversion funnel around one primary call to action instead of separate service bookings.</li>
+            <li>Built and deployed the front end, including responsive and mobile optimisation.</li>
+            <li>Advising on Calendly setup, Brevo CRM optimisation and digitising pre-test intake forms.</li>
+          </ul>
+        </div>
+        <div class="side">
+          <div><h4>My role</h4><p>Web designer and developer, working directly with the founder.</p></div>
+          <div><h4>Tools</h4><div class="tags"><span class="tag">Claude</span><span class="tag">GitHub Pages</span><span class="tag s">Calendly</span><span class="tag s">Brevo</span><span class="tag s">Tally</span><span class="tag s">WhatsApp</span></div></div>
+          <div><h4>Where it stands</h4><p style="color:var(--ink-2);font-size:15px">The site is still being built. Once it's live, I'll add the final results here.</p></div>
+          <div class="lks"><span class="lk soon"><small>WEBSITE</small><b><u>Coming soon</u></b></span><a class="lk" href="https://www.instagram.com/myo.performancelab" target="_blank" rel="noopener"><small>INSTAGRAM</small><b><u>@myo.performancelab</u><i aria-hidden="true">↗</i></b></a></div>
+        </div>
+      </article>
+        <div class="grid">
+        <article class="card rv card-wide">
+          <span class="status"><span class="dot"></span>Published 2026</span>
+          <h3>Rivalytics <span class="arr">↗</span></h3>
+          <p>My honors thesis, published in the Barton Journal: how marketing perception shapes consumer loyalty to Nike and Adidas.</p>
+          <ul class="role">
+            <li>Designed and ran a 134-respondent survey, benchmarked against industry data.</li>
+            <li>Found that 71.6% didn't link Adidas with sustainability.</li>
+            <li>Identified 3 consumer segments: performance-, fashion- and quality-driven buyers.</li>
+            <li>Presented the results on a dedicated website.</li>
+          </ul>
+          <div class="tags"><span class="tag s">Survey design</span><span class="tag s">Consumer research</span><span class="tag s">Market research</span><span class="tag">Data management</span><span class="tag">Critical thinking</span></div>
+          <div class="foot"><a class="lk" href="https://bartonjournal.org/vol-1-no-1/2026-cat2-article-no-009" target="_blank" rel="noopener"><small>PUBLISHED THESIS</small><b><u>bartonjournal.org</u><i aria-hidden="true">↗</i></b></a></div>
+        </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- EXPERIENCE -->
+  <section class="block alt" id="experience">
+    <div class="wrap">
+      <div class="head rv"><div><p class="kicker">where I've worked</p><h2>Experience</h2></div></div>
+      <div class="tl">
+        <div class="job rv">
+          <div class="job-top">
+            <div class="job-head"><h3>Quality Department Assistant</h3><div class="co"><span class="co-txt"><span class="co-name">Nufri</span></span></div></div>
+            <span class="meta"><span class="loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5a7 7 0 0 0-14 0C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Mollerussa, Spain</span><span class="when">May – Aug 2026</span></span>
+          </div>
+          <ul><li>Supported an applied research project analysing yield deviations in experimental apple orchards.</li><li>Took part in internal and external food-safety audits and kept batch traceability records accurate.</li><li>Inspected apples, pears and stone fruit against quality specifications, working with production and logistics.</li></ul>
+        </div>
+        <div class="job rv">
+          <div class="job-top">
+            <div class="job-head"><h3>Academic/Career Marketing &amp; Social Media Coordinator</h3><div class="co"><span class="co-txt"><span class="co-name">Barton College</span></span></div></div>
+            <span class="meta"><span class="loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5a7 7 0 0 0-14 0C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Wilson, North Carolina, USA</span><span class="when">2024 – May 2026</span></span>
+          </div>
+          <ul><li>Planned and produced weekly Instagram content on a monthly calendar, using engagement data to refine posts.</li><li>Promoted opportunities across Instagram, Handshake, LinkedIn and newsletters with consistent branding.</li><li>Co-planned student and employer outreach campaigns and reported engagement data to staff.</li><li>Coordinated documentation and procedures for international students.</li></ul>
+        </div>
+        <div class="job rv">
+          <div class="job-top">
+            <div class="job-head"><h3>Tennis Coach &amp; Project Manager</h3><div class="co"><span class="co-txt"><span class="co-name">Rafa Nadal Academy by Avanza Sports // Tennis &amp; Life Camps</span></span></div></div>
+            <span class="meta"><span class="loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5a7 7 0 0 0-14 0C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>USA</span><span class="when">2024 – 2025</span></span>
+          </div>
+          <ul><li>Coached mixed-age groups from beginner to advanced, adapting sessions to each player.</li><li>Evaluated progress and wrote weekly performance reports.</li><li>Managed weekly communication with families and coordinated coaching staff and resources.</li></ul>
+        </div>
+        <div class="job rv">
+          <div class="job-top">
+            <div class="job-head"><h3>Customs &amp; Logistics Assistant</h3><div class="co"><span class="co-txt"><span class="co-name">Tránsitos y Aduanas el Segre</span></span></div></div>
+            <span class="meta"><span class="loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5a7 7 0 0 0-14 0C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Lleida, Spain</span><span class="when">Jun – Jul 2023</span></span>
+          </div>
+          <ul><li>Prepared EU import and export customs documentation.</li><li>Managed the main inbox, routing client requests to the right team.</li><li>Resolved client queries in Spanish and Catalan.</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION + HONORS -->
+  <section class="block" id="education">
+    <div class="wrap">
+      <div class="head rv"><div><p class="kicker">what I've studied</p><h2>Education</h2></div></div>
+      <div class="list" style="margin-bottom:72px">
+        <div class="item rv"><b>University of Bath</b><span class="meta"><span class="loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5a7 7 0 0 0-14 0C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Bath, United Kingdom</span><span class="when">Sep 2026 – Sep 2027</span></span><p>MSc International Management</p></div>
+        <div class="item rv"><b>Founderz AI Business School × Microsoft</b><span class="meta"><span class="when">2026</span></span><p>Master's in AI &amp; Innovation, specialising in AI for Content Creation. Generative AI and prompt engineering, AI image and video creation, innovation methodologies and process automation with Copilot, Power Platform, Claude and Make.</p></div>
+        <div class="item rv"><b>Barton College</b><span class="meta"><span class="loc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5a7 7 0 0 0-14 0C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Wilson, North Carolina, USA</span><span class="when">Aug 2022 – May 2026</span></span><p>BS Business Administration and BA Mass Communication, minor in Honors Research.</p></div>
+      </div>
+
+      <h3 class="sub rv" id="honors">Honors and awards</h3>
+      <div class="honors">
+        <div class="honor rv"><span class="big">4.0 GPA</span><b>Summa cum laude</b><p>Graduated with a double degree from Barton College.</p></div>
+        <div class="honor rv"><span class="big">1 of 3</span><b>Hilley Cup</b><p>Awarded to the students with the highest cumulative GPA in the Class of 2026.</p></div>
+        <div class="honor rv"><span class="big">2026</span><b>Published thesis</b><p>Rivalytics, a research thesis for my minor in Honors Research, published in the Barton Journal.</p></div>
+        <div class="honor rv"><span class="big">4 yrs</span><b>Varsity athlete</b><p>Played collegiate women's tennis at Barton College, 2022–26.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="block alt" id="skills">
+    <div class="wrap">
+      <div class="head rv"><div><p class="kicker">what I bring</p><h2>Skills, languages and certifications</h2></div></div>
+      <div class="skills">
+        <div class="rv">
+          <h3>Skills</h3>
+          <h4 style="font:600 12px/1 var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin:0 0 10px">AI and digital</h4>
+          <div class="tags" style="margin-bottom:20px"><span class="tag">Claude</span><span class="tag">Make</span><span class="tag">Lovable</span><span class="tag">Prompt engineering</span><span class="tag">GitHub</span><span class="tag">Notion</span><span class="tag">HTML/CSS</span></div>
+          <h4 style="font:600 12px/1 var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);margin:0 0 10px">Marketing and research</h4>
+          <div class="tags"><span class="tag s">Social media strategy</span><span class="tag s">Content calendars</span><span class="tag s">Email marketing</span><span class="tag s">Google Search Console</span><span class="tag s">Survey design</span><span class="tag s">Consumer research</span><span class="tag s">Excel</span></div>
+        </div>
+        <div class="rv">
+          <h3>Languages</h3>
+          <div class="lang" id="langs">
+            <div><div class="row">Spanish <span>Native</span></div><div class="bar"><i style="--v:1"></i></div></div>
+            <div><div class="row">Catalan <span>Native</span></div><div class="bar"><i style="--v:1"></i></div></div>
+            <div><div class="row">English <span>Full professional (C1)</span></div><div class="bar"><i style="--v:.9"></i></div></div>
+            <div><div class="row">French <span>Beginner (A1)</span></div><div class="bar"><i style="--v:.18"></i></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-block">
+        <h3 class="sub rv">Certifications</h3>
+        <ul class="certs">
+          <li class="rv"><span class="c-name">Emerging Leaders Certification<small>Truist Leadership Institute</small></span><span class="c-year">2026</span></li>
+          <li class="rv"><span class="c-name">Google Digital Marketing &amp; E-commerce<small>Google Certificates</small></span><span class="c-year">2024</span></li>
+          <li class="rv"><span class="c-name">Meta Certified Digital Marketing Associate<small>Meta Certification</small></span><span class="c-year">2024</span></li>
+          <li class="rv"><span class="c-name">Sales Operation Management Course<small>University of West Virginia</small></span><span class="c-year">2023</span></li>
+          <li class="rv"><span class="c-name">Fundamentals of Digital Marketing Course<small>Google Career Certificates</small></span><span class="c-year">2023</span></li>
+          <li class="rv"><span class="c-name">English Certificate C1 Advanced<small>Cambridge University</small></span><span class="c-year">2022</span></li>
+          <li class="rv"><span class="c-name">Official TOEFL iBT Certificate<small>TOEFL iBT</small></span><span class="c-year">2022</span></li>
+        </ul>
+      </div>
+
+      <div class="soft">
+        <h3 class="sub rv soft-h">Soft skills</h3>
+        <p class="soft-sub rv">Each skill comes with a real moment where I put it into practice.</p>
+        <div class="softs">
+          <div class="sk rv"><span class="skic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></svg></span><b>Leadership</b><p>Vice President of the Student Government Association, representing 1,212 students and leading the year's events programme.</p></div>
+          <div class="sk rv"><span class="skic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></span><b>Communication</b><p>Weekly updates to families as a coach, campaigns across four channels, and client queries in three languages.</p></div>
+          <div class="sk rv"><span class="skic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="9" r="3"/><circle cx="16.5" cy="9" r="3"/><path d="M2.5 19c.8-3 3-4.5 5.5-4.5s4.7 1.5 5.5 4.5M12 15.2c1.2-.5 2.7-.7 4.5-.7 2.5 0 4.7 1.5 5.5 4.5"/></svg></span><b>Teamwork and coordination</b><p>Coordinated coaching staff and resources, and worked with production and logistics teams to resolve quality issues.</p></div>
+          <div class="sk rv"><span class="skic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2M9 2h6"/></svg></span><b>Discipline &amp; time management</b><p>A 4.0 GPA across a double degree while competing as a varsity tennis player for four years.</p></div>
+          <div class="sk rv"><span class="skic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg></span><b>Adaptability</b><p>Studied, worked and competed in Spain and the US, moving between marketing, coaching, logistics and quality roles.</p></div>
+          <div class="sk rv"><span class="skic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><b>Analytical thinking</b><p>Designed and ran a 134-person survey for my published thesis, and supported applied research on orchard yields.</p></div>
+        </div>
+      </div>
+
+      <div class="lead">
+        <h3 class="sub rv">Leadership and recognition</h3>
+        <p class="lead-sub rv">Roles I've taken on, and the recognition that came with them.</p>
+        <div class="list">
+            <div class="item rv"><b><svg class="mk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></svg>Vice President, Student Government Association</b><span class="when">2025–26</span><p>Represented all 1,212 Barton College students as direct liaison with the Director of Student Experience. Led the year's events programme.</p></div>
+            <div class="item rv"><b><svg class="mk star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg>The Finance and Economics Award</b><p>Presented each year at Barton College to the graduating School of Business &amp; Innovation student voted the most outstanding in economics and finance.</p></div>
+            <div class="item rv"><b><svg class="mk star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg>Conference Carolinas Presidential Honor Roll</b><span class="when">2023, 2024</span></div>
+            <div class="item rv"><b><svg class="mk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></svg>Vice President, Future Business Leaders of America Collegiate</b><span class="when">2024</span></div>
+            <div class="item rv"><b><svg class="mk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></svg>Marketing Ambassador, Student-Athlete Advisory Committee</b><span class="when">2024</span></div>
+            <div class="item rv"><b><svg class="mk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></svg>Member, European Youth Parliament</b><span class="when">2020</span></div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI LAB -->
+  <section class="block" id="ai">
+    <div class="wrap">
+      <div class="head rv"><div><p class="kicker">how I build</p><h2>AI lab</h2></div><p>The tools I use and how I work with them.</p></div>
+
+      <div class="lab-part" id="toolkit">
+        <h3 class="sub rv">Toolkit</h3>
+        <div class="tools">
+          <div class="tool rv"><b>Claude</b><p>Designing, coding and managing my projects.</p></div>
+          <div class="tool rv"><b>Lovable</b><p>Turning app ideas into prototypes.</p></div>
+          <div class="tool rv"><b>Make</b><p>Automating repetitive steps.</p></div>
+          <div class="tool rv"><b>GitHub Pages</b><p>Hosting and shipping my websites.</p></div>
+          <div class="tool rv"><b>Notion</b><p>Planning and organising my work.</p></div>
+          <div class="tool rv"><b>Copilot and Power Platform</b><p>Process automation, from my AI Master's.</p></div>
+        </div>
+      </div>
+
+      <div class="lab-part" id="process">
+        <h3 class="sub rv">How I work with AI</h3>
+        <div class="steps rv">
+          <div class="step"><b>Define the goal</b><p>Who it's for and the one thing it has to achieve.</p></div>
+          <div class="step"><b>Choose the right tools</b><p>Pick the tool that fits the job, from Claude to Lovable or Make, instead of forcing one tool to do everything.</p></div>
+          <div class="step"><b>Bring what I know</b><p>Start from my own knowledge of business, marketing and the brand, so the AI builds on solid ground.</p></div>
+          <div class="step"><b>Prompt with care</b><p>Clear, detailed prompts with real context: brand books, CVs, constraints and examples.</p></div>
+          <div class="step"><b>Iterate and check</b><p>Compare options, refine, and review facts, tone, code and mobile layout myself.</p></div>
+          <div class="step"><b>Ship and improve</b><p>Publish, gather feedback and keep improving.</p></div>
+        </div>
+      </div>
+
+      <div class="lab-part" id="built">
+        <h3 class="sub rv">This site was built with AI</h3>
+        <p class="rv" style="color:var(--ink-2);max-width:60ch;margin-bottom:24px">I designed and built this portfolio together with Claude. Here's how it went.</p>
+        <div class="built-grid">
+        <a class="browser rv" href="#top" aria-label="Back to the top of this site">
+          <div class="br-bar"><span class="br-d"></span><span class="br-d"></span><span class="br-d"></span><span class="br-url"><span class="br-lock" aria-hidden="true">●</span>epas25.github.io/portfolio<em aria-hidden="true">↗</em></span></div>
+          <div class="br-body" aria-hidden="true">
+            <div class="br-nav"><span>Eulalia Pascual Biosca<i>.</i></span><span class="br-links"><span></span><span></span><span></span><span></span></span></div>
+            <div class="br-hero">
+              <div class="br-txt"><span class="br-hi">Hi there 👋</span><span class="br-h1">I'm Eulalia.<br>I turn ideas into real<br>things with <em>AI</em></span><span class="br-ln"></span><span class="br-ln short"></span></div>
+              <div class="br-ph"><span class="br-blob"></span><span class="br-frame" style="background-image:url('img/hero.jpg')"></span></div>
+            </div>
+          </div>
+          <div class="br-foot"><span>You're looking at it</span><b>Back to top ↑</b></div>
+        </a>
+        <ol class="story rv">
+          <li><div><b>Brief</b><p>My CV and one rule: nothing invented.</p></div></li>
+          <li><div><b>Design</b><p>A warm, human look in my favourite blue.</p></div></li>
+          <li><div><b>Refine</b><p>I commented on the page; Claude applied each change.</p></div></li>
+          <li><div><b>Ship</b><p>Mobile-ready and live on GitHub Pages.</p></div></li>
+        </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="block alt" id="contact">
+    <div class="wrap contact">
+      <h2 class="rv">Let's build something together.</h2>
+      <div class="contact-lks rv">
+        <div class="lk"><small>EMAIL</small><b><u id="email">epascual2508@gmail.com</u></b><button type="button" id="copy" class="copy-btn">Copy</button></div>
+        <a class="lk" href="https://www.linkedin.com/in/eulaliapascualbiosca" target="_blank" rel="noopener"><small>LINKEDIN</small><b><u>in/eulaliapascualbiosca</u><i aria-hidden="true">↗</i></b></a>
+        <a class="lk" href="Eulalia-Pascual-Biosca-CV.pdf" target="_blank" rel="noopener"><small>RESUME</small><b><u>CV</u><i aria-hidden="true">↗</i></b></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap"><span>© 2026 Eulalia Pascual Biosca</span><span>Designed and built with Claude · Hosted on GitHub Pages</span></div>
+</footer>
+
+<button type="button" class="ask-fab" id="askFab" aria-expanded="false" aria-controls="askPanel">
+  <svg class="ask-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>
+  <svg class="ask-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+  <span>Ask me</span>
+</button>
+<div class="chat" id="askPanel" role="dialog" aria-label="Ask about my work" hidden>
+  <div class="chat-top"><span><b>Ask about my work</b></span><button type="button" class="chat-x" id="askClose" aria-label="Close">×</button></div>
+  <div class="log" id="log" aria-live="polite"></div>
+  <div class="chips" id="chips"></div>
+  <p class="chat-note">Pre-written answers from my CV. No live AI, nothing stored.</p>
+</div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // nav shadow + mobile menu
+  var nav = document.getElementById('nav');
+  var links = document.getElementById('links');
+  var btn = document.getElementById('menuBtn');
+  function onScroll(){ nav.classList.toggle('scrolled', window.scrollY > 8); }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+  btn.addEventListener('click', function(){
+    var open = links.getAttribute('data-open') === 'true';
+    links.setAttribute('data-open', open ? 'false' : 'true');
+    btn.setAttribute('aria-expanded', open ? 'false' : 'true');
+    btn.textContent = open ? '☰' : '✕';
+  });
+  links.addEventListener('click', function(e){
+    if (e.target.tagName === 'A' && window.innerWidth <= 1000){ links.setAttribute('data-open','false'); btn.setAttribute('aria-expanded','false'); btn.textContent='☰'; }
+  });
+
+  // active section in menu
+  var navLinks = Array.prototype.slice.call(links.querySelectorAll('a[href^="#"]:not(.btn)'));
+  if ('IntersectionObserver' in window){
+    var secIO = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting){
+          var id = en.target.id;
+          navLinks.forEach(function(a){ a.classList.toggle('active', a.getAttribute('href') === '#'+id); });
+        }
+      });
+    }, {rootMargin:'-45% 0px -50% 0px'});
+    ['about','projects','experience','education','skills','ai','contact'].forEach(function(id){ var s=document.getElementById(id); if(s) secIO.observe(s); });
+  }
+
+  // keep the headline to three lines: scale it so the widest line (with the longest rotating word) always fits
+  var h1=document.querySelector('.hero h1'), l2=document.getElementById('hl2'), l3=document.getElementById('hl3'), rotEl=document.getElementById('rot');
+  var fitWords=['AI','data','creativity','curiosity','ambition'];
+  function fitHeadline(){
+    h1.style.fontSize='';
+    var max=parseFloat(getComputedStyle(h1).fontSize), avail=h1.clientWidth, cur=rotEl.textContent, w=l2.scrollWidth;
+    fitWords.forEach(function(x){ rotEl.textContent=x; w=Math.max(w, l3.scrollWidth); });
+    rotEl.textContent=cur;
+    if (w > avail && w > 0) h1.style.fontSize=Math.floor(max*avail/w*0.97)+'px';
+  }
+  fitHeadline();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitHeadline);
+  window.addEventListener('resize', fitHeadline);
+
+  // rotating word
+  var words = ['AI','data','creativity','curiosity','ambition'], i = 0, rot = document.getElementById('rot');
+  if (!reduce) setInterval(function(){
+    rot.classList.add('out');
+    setTimeout(function(){ i = (i+1) % words.length; rot.textContent = words[i]; rot.classList.remove('out'); }, 350);
+  }, 2400);
+
+  // reveal: only elements below the fold get the pre state, so the page is complete at rest
+  if (!reduce && 'IntersectionObserver' in window){
+    var els = document.querySelectorAll('.rv');
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if (en.isIntersecting){ en.target.classList.remove('pre'); io.unobserve(en.target); } });
+    }, {rootMargin:'0px 0px -8% 0px'});
+    var vh = window.innerHeight;
+    els.forEach(function(el){ if (el.getBoundingClientRect().top > vh){ el.classList.add('pre'); io.observe(el); } });
+  }
+
+  // language bars grow when seen
+  var langs = document.getElementById('langs');
+  if (!reduce && 'IntersectionObserver' in window){
+    var bars = langs.querySelectorAll('.bar i');
+    if (langs.getBoundingClientRect().top > window.innerHeight){
+      bars.forEach(function(b){ b.style.transform='scaleX(0)'; });
+      var lio = new IntersectionObserver(function(en){ if (en[0].isIntersecting){ bars.forEach(function(b){ b.style.transform=''; }); lio.disconnect(); } }, {threshold:.4});
+      lio.observe(langs);
+    }
+  }
+
+  // hero email: copy on click
+  var he=document.getElementById('heroEmail');
+  if (he) he.addEventListener('click', function(){
+    var tip=he.querySelector('.hc-tip'), txt='epascual2508@gmail.com';
+    function ok(){ tip.textContent='Copied'; setTimeout(function(){ tip.textContent=''; },1600); }
+    function fb(){ var r=document.createRange(); r.selectNodeContents(he.querySelector('span')); var sel=window.getSelection(); sel.removeAllRanges(); sel.addRange(r); tip.textContent='Selected'; setTimeout(function(){ tip.textContent=''; },1600); }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(ok,fb); else fb();
+  });
+
+  // copy email
+  var copyBtn = document.getElementById('copy');
+  copyBtn.addEventListener('click', function(){
+    var text = document.getElementById('email').textContent;
+    function done(){ copyBtn.textContent = 'Copied'; setTimeout(function(){ copyBtn.textContent='Copy'; }, 1800); }
+    function fallback(){ var r=document.createRange(); r.selectNodeContents(document.getElementById('email')); var s=window.getSelection(); s.removeAllRanges(); s.addRange(r); copyBtn.textContent='Selected'; }
+    if (navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(text).then(done, fallback); } else { fallback(); }
+  });
+
+  // floating ask panel
+  var fab=document.getElementById('askFab'), panel=document.getElementById('askPanel');
+  function setAsk(open){ panel.hidden=!open; fab.setAttribute('aria-expanded', open?'true':'false'); if(open){ var c=panel.querySelector('.chip:not([disabled])'); if(c) c.focus(); } }
+  fab.addEventListener('click', function(){ setAsk(panel.hidden); });
+  document.getElementById('askClose').addEventListener('click', function(){ setAsk(false); fab.focus(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape' && !panel.hidden){ setAsk(false); fab.focus(); } });
+  Array.prototype.forEach.call(document.querySelectorAll('[data-ask]'), function(b){ b.addEventListener('click', function(){ setAsk(true); }); });
+
+  // scripted demo
+  var qa = [
+    {q:'What do you use AI for?', a:'I use AI to automate workflows, create content and prototype digital products. I prototyped the RideU app with Lovable and Claude, I\'m building the MYO Performance Lab website with Claude, and I manage my projects with Claude connected to GitHub and Notion, plus Make automations.'},
+    {q:'What are you studying?', a:'I\'m doing an MSc in International Management at the University of Bath. Before that I graduated summa cum laude from Barton College with a BS in Business Administration and a BA in Mass Communication, and completed a Master\'s in AI & Innovation at Founderz × Microsoft, specialising in AI for content creation.'},
+    {q:'Tell me about your research', a:'My honors thesis, Rivalytics, was published in the Barton Journal. I surveyed 134 people about Nike and Adidas and found their perception differed from global trends: 71.6% didn\'t link Adidas with sustainability. I identified three consumer segments: performance-, fashion- and quality-driven buyers.'},
+    {q:'What marketing experience do you have?', a:'At Barton College I was the Academic/Career Marketing & Social Media Coordinator. I planned weekly Instagram content, promoted opportunities across four channels with consistent branding, and co-planned outreach campaigns using engagement data.'},
+    {q:'Which languages do you speak?', a:'Spanish and Catalan are my native languages, I work in English at full professional level (Cambridge C1, plus a four-year US degree), and I\'m starting French.'},
+    {q:'How can I contact you?', a:'Email me at epascual2508@gmail.com or find me on LinkedIn. The contact section at the bottom of the page has both.'}
+  ];
+  var log = document.getElementById('log'), chips = document.getElementById('chips'), busy = false;
+  function bubble(cls, html){ var d=document.createElement('div'); d.className='msg '+cls; d.innerHTML=html; log.appendChild(d); log.scrollTop=log.scrollHeight; return d; }
+  function esc(s){ return s.replace(/[&<>]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]; }); }
+  bubble('a', 'Hi! I can answer questions about Eulalia\'s work, studies and projects. Pick one below.');
+  qa.forEach(function(item){
+    var c=document.createElement('button'); c.type='button'; c.className='chip'; c.textContent=item.q;
+    c.addEventListener('click', function(){
+      if (busy) return; busy = true;
+      Array.prototype.forEach.call(chips.children, function(x){ x.disabled = true; });
+      bubble('q', esc(item.q));
+      var t = bubble('a', '<span class="typing" aria-label="typing"><i></i><i></i><i></i></span>');
+      setTimeout(function(){
+        if (reduce){ t.textContent = item.a; finish(); return; }
+        t.textContent = ''; var k = 0;
+        var iv = setInterval(function(){ k += 3; t.textContent = item.a.slice(0,k); log.scrollTop = log.scrollHeight; if (k >= item.a.length){ clearInterval(iv); finish(); } }, 16);
+      }, reduce ? 0 : 650);
+      function finish(){ busy = false; Array.prototype.forEach.call(chips.children, function(x){ x.disabled = false; }); c.disabled = true; c.style.display='none'; }
+    });
+    chips.appendChild(c);
+  });
+})();
+</script>
+
+</body>
+</html>
